@@ -26,13 +26,13 @@ export class AppComponent {
 
   addNewBall(): void {
     this.totalBalls++;
-    if (this.totalBalls % 15 === 0 && this.totalBalls !== 0) {
+    if (this.totalBalls % 15 === 0) {
       this.purpleBalls++;
       this.balls.push(this.purple);
-    } else if (this.totalBalls % 5 === 0 && this.totalBalls !== 0) {
+    } else if (this.totalBalls % 5 === 0) {
       this.blueBalls++;
       this.balls.push(this.blue);
-    } else if (this.totalBalls % 3 === 0 && this.totalBalls !== 0) {
+    } else if (this.totalBalls % 3 === 0) {
       this.greenBalls++;
       this.balls.push(this.green);
     } else {
